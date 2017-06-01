@@ -1,0 +1,38 @@
+# Author: Chen Xusheng, Zhu Youwei
+
+Structure:
+	1. c6c: C like compiler. Output is three address code.
+	2. nas:  Stack machine used to execute TAC.
+
+Compile and Run:
+	cd c6
+	make all
+	./c6c testcase.sc > out
+	./nas out
+
+Testcase:
+	1. t1.sc: Global array define and initialization
+	2. t2.sc: Local array define and initialization
+	3. t3.sc: Array Pass by reference
+	4. t4.sc: Main function
+	5. t5.sc: Pointer and reference
+
+
+Ohtello Games
+  Mode:
+	1. Ohtello two player mode: 
+		Run Command:
+		./c6c ../othello/othello.sc > othello.as; ./nas othello.as
+
+	2. Ohtello single player mode (VS Computer):
+		Run Command:
+		./c6c ../othello/othello-vs-computer.sc > othello-vs-computer.as; ./nas othello-vs-computer.as
+
+  Operation:
+  	-- You are holding the pieces of 'O'
+  	-- Leagl positions are marked with '*'
+  	-- Input format: 'R4', 'A9', etc. 
+  	-- Type '?' for help on the rules. 
+  	-- Type 'Q' to exit. 
+
+
